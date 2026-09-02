@@ -111,9 +111,9 @@ def check_samtools():
     try:
         result = subprocess.run(
             ["samtools", "--version"],
-            capture_output=True, text=True, timeout=10
+            capture_output=True, timeout=10
         )
-        version = result.stdout.split('\n')[0]
+        version = result.stdout.decode("utf-8", errors="replace").split('\n')[0]
         print(f"✓ samtools found: {version}")
         return True
     except (FileNotFoundError, subprocess.TimeoutExpired):
