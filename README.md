@@ -36,8 +36,8 @@ Those 3 men are confirmed genetic relatives of Kelland Drumgoole on the direct p
 
 | Generation | Person | Birth | Location |
 |------------|--------|-------|----------|
-| You | Kelland Drumgoole | — | Louisiana, USA |
-| Father | Leroy Drumgoole Jr | — | Louisiana |
+| You | Kelland Drumgoole |Pine Bluff, Jefferson Co., Arkansas |
+| Father | Leroy Drumgoole Jr | Pine Bluff, Jefferson Co., Arkansas |
 | Grandfather | Leroy Drumgoole Sr | Jan 24, 1932 | Pine Bluff, Jefferson Co., Arkansas |
 | Great Grandfather | Arthur Drumgoole | 1859 | Catahoula Parish, LA → Jefferson Co., AR |
 | 2x Great Grandfather | Woodley Drumgoole | ~1809 | Virginia → Trinity, Catahoula Parish, LA |
@@ -209,7 +209,7 @@ This research would not be possible without:
 ## Contact
 
 **Kelland Drumgoole**  
-Louisiana, USA  
+Arkansas, USA  
 YFull ID: YF133256  
 GitHub: github.com/plantedlabs/joladnaresearch
 
