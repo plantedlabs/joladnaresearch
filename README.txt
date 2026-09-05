@@ -276,7 +276,7 @@ Dr. Ellen Leffler (University of Utah) for ongoing assistance
 
 Contact
 Kelland Drumgoole
-Louisiana, USA
+Arkansas, USA
 YFull ID: YF133256
 GitHub: github.com/plantedlabs/joladnaresearch
 
