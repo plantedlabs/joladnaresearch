@@ -1,6 +1,6 @@
 Jola DNA Research
 Tracing African American Paternal Ancestry to the Jola-Fonyi People of The Gambia
-Researcher: Kelland Drumgoole, Louisiana, USA
+Researcher: Kelland Drumgoole, Arkansas, USA
 YFull ID: YF133256
 Haplogroup: E-FTF75935 / E-Z15174* (downstream of E-CTS246 → E-Z906 → E-Z958 → E-Z15174)
 Repository: github.com/plantedlabs/joladnaresearch
