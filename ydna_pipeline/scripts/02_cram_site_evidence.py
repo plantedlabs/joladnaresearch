@@ -76,6 +76,14 @@ def fetch(cram, ref_fa, region, timeout, retries):
     return None, err
 
 
+def _as_xs(fields):
+    t = {x[:2]: x[5:] for x in fields[11:]}
+    try:
+        return int(t['AS']) - int(t['XS'])
+    except (KeyError, ValueError):
+        return None
+
+
 def classify(ref_n, alt_n, oth_n, frac_lowmq, mapflag, depth, n_lowmq):
     if mapflag == 'fail' or (frac_lowmq > 0.5 and n_lowmq >= 2):
         return 'UNRELIABLE_MAPPING'
@@ -110,6 +118,8 @@ def main():
     ap.add_argument('--min-bq', type=int, default=20)
     ap.add_argument('--timeout', type=int, default=180)
     ap.add_argument('--retries', type=int, default=2)
+    ap.add_argument('--strict', action='store_true',
+                    help='also exclude reads with <50%% of bases aligned (heavy clipping) or XS > AS (better alignment elsewhere)')
     ap.add_argument('--roles', default='', help='comma list of sample roles to include (default all)')
     a = ap.parse_args()
 
@@ -120,7 +130,7 @@ def main():
     sites = []
     for path in a.sites:
         for s in read_tsv(path):
-            s['site_set'] = 'private' if s['id'].startswith('PV') else 'branch_marker'
+            s['site_set'] = 'private' if s['id'].startswith('PV') else 'tree_marker'
             sites.append(s)
     mapflags = {}
     if a.mappability:
@@ -135,7 +145,7 @@ def main():
                            capture_output=True, text=True, check=True).stdout.split('\n')[1].upper()
         refseq[s['id']] = r
 
-    cols = ['sample_id', 'population', 'ydna_branch_yfull', 'site_set', 'site_id', 'grch38_pos',
+    cols = ['sample_id', 'population', 'ydna_branch_yfull', 'filter_mode', 'site_set', 'site_id', 'grch38_pos',
             'my_ref_allele', 'my_derived_allele', 'reference_base_check',
             'raw_primary_reads', 'dup_or_secondary_excluded', 'low_mapq_reads', 'low_bq_reads',
             'filtered_depth', 'filtered_ref_reads', 'filtered_alt_reads', 'filtered_other_reads',
@@ -154,7 +164,7 @@ def main():
             lines, err = fetch(smp['cram_url'], a.ref, region, a.timeout, a.retries)
             mf, mnote = mapflags.get(s['id'], ('not_assessed', ''))
             row = dict(sample_id=smp['sample'], population=smp['population'],
-                       ydna_branch_yfull=smp['yfull_branch'], site_set=s['site_set'], site_id=s['id'],
+                       ydna_branch_yfull=smp['yfull_branch'], filter_mode=('strict' if a.strict else 'standard'), site_set=s['site_set'], site_id=s['id'],
                        grch38_pos=pos, my_ref_allele=s['ref'], my_derived_allele=s['alt'],
                        reference_base_check=('match' if refseq[s['id']] == s['ref'].upper()
                                              else f"MISMATCH(ref={refseq[s['id']]})"),
@@ -181,11 +191,15 @@ def main():
                     raw += 1; primary_mapqs.append(mapq)
                     if mapq < a.min_mapq:
                         lowmq += 1; status = 'low_mapq'
+                    elif a.strict and (sum(int(n) for n, o in CIGAR_RE.findall(cigar) if o in 'M=X') < 0.5 * len(seq)):
+                        status = 'clipped'
+                    elif a.strict and _as_xs(f) is not None and _as_xs(f) < 0:
+                        status = 'suboptimal'
                     elif bq < a.min_bq:
                         lowbq += 1; status = 'low_bq'
                     else:
                         good.append((b, mapq, strand, bq, dist, soft)); status = 'used'
-                if status in ('low_mapq', 'low_bq') and b == s['alt'].upper():
+                if status in ('low_mapq', 'low_bq', 'clipped', 'suboptimal') and b == s['alt'].upper():
                     alt_dropped += 1
                 rout.write(f"{smp['sample']}\t{s['id']}\t{f[0]}\t{flag}\t{mapq}\t{strand}\t{b}\t{bq}\t{dist}\t{soft}\t{status}\n")
             ref_b, alt_b = s['ref'].upper(), s['alt'].upper()

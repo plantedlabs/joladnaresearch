@@ -18,7 +18,16 @@ PV16,18949120,C,T,C,C,match,False,True,1.0,False,,60,60.0,0,0,,pass,site repeat-
 PV17,21349919,G,A,G,G,match,False,True,1.0,False,,60,60.0,0,0,,pass,site repeat-masked; PRELIMINARY chrX/chrY-only test; not genome-wide
 PV18,21680474,C,G,C,C,match,False,True,1.0,True,0.965,51,58.0,0,0,,pass,site repeat-masked; PRELIMINARY chrX/chrY-only test; not genome-wide
 PV19,26572350,C,T,C,C,match,False,True,0.51,True,0.9619,60,60.0,0,0,,pass,site repeat-masked; PRELIMINARY chrX/chrY-only test; not genome-wide
+M132,19734375,G,T,G,G,match,False,False,0.0,False,,60,60.0,0,0,,pass,PRELIMINARY chrX/chrY-only test; not genome-wide
+Z958,20558142,C,T,C,C,match,False,True,1.0,False,,60,60.0,0,0,,pass,site repeat-masked; PRELIMINARY chrX/chrY-only test; not genome-wide
+CTS246,2972260,G,A,G,G,match,False,True,0.53,False,,60,60.0,0,0,,pass,site repeat-masked; PRELIMINARY chrX/chrY-only test; not genome-wide
+Z906,8360264,T,C,T,T,match,False,True,1.0,False,,60,60.0,0,0,,pass,site repeat-masked; PRELIMINARY chrX/chrY-only test; not genome-wide
 Z15174,4202358,G,T,G,G,match,False,True,1.0,True,0.9873,26,60.0,0,1,chrX:90624562(NM2),caution,1/10 tiles have near-identical alt hit; segdup fracMatch 0.987; site repeat-masked; PRELIMINARY chrX/chrY-only test; not genome-wide
-Z15234,8414659,C,T,C,C,match,False,False,0.0,False,,60,60.0,0,0,,pass,PRELIMINARY chrX/chrY-only test; not genome-wide
+Z15197,8414659,C,T,C,C,match,False,False,0.0,False,,60,60.0,0,0,,pass,PRELIMINARY chrX/chrY-only test; not genome-wide
 Z15231,14719978,G,A,G,G,match,False,False,0.0,False,,60,60.0,0,0,,pass,PRELIMINARY chrX/chrY-only test; not genome-wide
 Z15232,14765245,T,C,T,T,match,False,False,0.0,False,,60,60.0,0,0,,pass,PRELIMINARY chrX/chrY-only test; not genome-wide
+Z15234,15274693,C,G,C,C,match,False,True,1.0,False,,60,60.0,0,0,,pass,site repeat-masked; PRELIMINARY chrX/chrY-only test; not genome-wide
+Z5991,2849335,C,T,C,C,match,False,False,0.0,False,,60,60.0,0,0,,pass,PRELIMINARY chrX/chrY-only test; not genome-wide
+FT402211,9176816,A,G,A,A,match,False,True,1.0,True,0.965,15,60.0,0,1,chrY:21687651(NM2),caution,some tiles MAPQ 15; 1/10 tiles have near-identical alt hit; site repeat-masked; PRELIMINARY chrX/chrY-only test; not genome-wide
+Z15196,8336326,A,C,A,A,match,False,True,1.0,False,,60,60.0,0,0,,pass,site repeat-masked; PRELIMINARY chrX/chrY-only test; not genome-wide
+FTF75935,2895562,A,C,A,A,match,False,True,1.0,False,,54,60.0,0,0,,pass,site repeat-masked; PRELIMINARY chrX/chrY-only test; not genome-wide
