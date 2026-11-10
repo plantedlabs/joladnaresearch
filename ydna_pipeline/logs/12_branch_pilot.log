@@ -86,3 +86,9 @@
 == SC_GMWOF5428831 (test) sexY=6551 male
    M132      A ref=4 alt=0 oth=0 d=4 
    Z958      A ref=12 alt=0 oth=0 d=12 
+   CTS246    A ref=12 alt=0 oth=0 d=12 
+   Z906      A ref=9 alt=0 oth=0 d=9 
+== SC_GMWOF5428829 (test) sexY=5696 male
+   M132      A ref=4 alt=0 oth=0 d=4 
+   Z958      A ref=6 alt=0 oth=0 d=6 
+   CTS246    A ref=4 alt=0 oth=0 d=4 
