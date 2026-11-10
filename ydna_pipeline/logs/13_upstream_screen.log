@@ -5,3 +5,340 @@
    Z906      A ref=8 alt=0 oth=0 d=8 
    Z15174    A ref=5 alt=0 oth=0 d=5 
    Z15197    A ref=4 alt=0 oth=0 d=4 
+   Z15231    A ref=3 alt=0 oth=0 d=3 
+   Z15232    A ref=10 alt=0 oth=0 d=10 
+   Z15234    A ref=10 alt=0 oth=0 d=10 
+== SC_GMFUL5306344 (screen) sexY=5845 male
+   M132      A ref=2 alt=0 oth=0 d=2 
+   Z958      A ref=7 alt=0 oth=0 d=7 
+   CTS246    N ref=1 alt=0 oth=0 d=1 single usable fragment
+   Z906      A ref=8 alt=0 oth=0 d=8 
+   Z15174    A ref=2 alt=0 oth=0 d=2 
+   Z15197    N ref=0 alt=0 oth=0 d=0 zero coverage
+   Z15231    A ref=2 alt=0 oth=0 d=2 
+   Z15232    A ref=10 alt=0 oth=0 d=10 
+   Z15234    A ref=3 alt=0 oth=0 d=3 
+== SC_GMFUL5306346 (screen) sexY=5924 male
+   M132      A ref=6 alt=0 oth=0 d=6 
+   Z958      A ref=6 alt=0 oth=0 d=6 
+   CTS246    A ref=3 alt=0 oth=0 d=3 
+   Z906      A ref=6 alt=0 oth=0 d=6 
+== SC_GMFUL5306347 (screen) sexY=5700 male
+   M132      A ref=11 alt=0 oth=0 d=11 
+   Z958      A ref=6 alt=0 oth=0 d=6 
+   CTS246    A ref=4 alt=0 oth=0 d=4 
+   Z906      A ref=5 alt=0 oth=0 d=5 
+== SC_GMFUL5306348 (screen) sexY=5655 male
+   M132      A ref=3 alt=0 oth=0 d=3 
+   Z958      A ref=5 alt=0 oth=0 d=5 
+   CTS246    N ref=1 alt=0 oth=0 d=1 single usable fragment
+   Z906      A ref=6 alt=0 oth=0 d=6 
+   Z15174    A ref=5 alt=0 oth=0 d=5 
+   Z15197    A ref=4 alt=0 oth=0 d=4 
+   Z15231    A ref=3 alt=0 oth=0 d=3 
+   Z15232    A ref=3 alt=0 oth=0 d=3 
+   Z15234    A ref=5 alt=0 oth=0 d=5 
+== SC_GMFUL5306349 (screen) sexY=5412 male
+   M132      A ref=5 alt=0 oth=0 d=5 
+   Z958      N ref=1 alt=0 oth=0 d=1 single usable fragment
+   CTS246    A ref=2 alt=0 oth=0 d=2 
+   Z906      A ref=10 alt=0 oth=0 d=10 
+== SC_GMFUL5306351 (screen) sexY=5183 male
+   M132      A ref=2 alt=0 oth=0 d=2 
+   Z958      A ref=4 alt=0 oth=0 d=4 
+   CTS246    A ref=4 alt=0 oth=0 d=4 
+   Z906      A ref=8 alt=0 oth=0 d=8 
+== SC_GMFUL5306352 (screen) sexY=5635 male
+   M132      A ref=6 alt=0 oth=0 d=6 
+   Z958      A ref=6 alt=0 oth=0 d=6 
+   CTS246    N ref=0 alt=0 oth=0 d=0 zero coverage
+   Z906      A ref=7 alt=0 oth=0 d=7 
+   Z15174    A ref=4 alt=0 oth=0 d=4 
+   Z15197    N ref=1 alt=0 oth=0 d=1 single usable fragment
+   Z15231    A ref=6 alt=0 oth=0 d=6 
+   Z15232    A ref=9 alt=0 oth=0 d=9 
+   Z15234    A ref=6 alt=0 oth=0 d=6 
+== SC_GMFUL5306353 (screen) sexY=5390 male
+   M132      A ref=3 alt=0 oth=0 d=3 
+   Z958      A ref=3 alt=0 oth=0 d=3 
+   CTS246    N ref=1 alt=0 oth=0 d=1 single usable fragment
+   Z906      A ref=6 alt=0 oth=0 d=6 
+   Z15174    A ref=6 alt=0 oth=0 d=6 
+   Z15197    A ref=2 alt=0 oth=0 d=2 
+   Z15231    A ref=4 alt=0 oth=0 d=4 
+   Z15232    A ref=6 alt=0 oth=0 d=6 
+   Z15234    A ref=8 alt=0 oth=0 d=8 
+== SC_GMFUL5306363 (screen) sexY=6476 male
+   M132      A ref=5 alt=0 oth=0 d=5 
+   Z958      A ref=5 alt=0 oth=0 d=5 
+   CTS246    A ref=8 alt=0 oth=0 d=8 
+   Z906      A ref=10 alt=0 oth=0 d=10 
+== SC_GMFUL5306366 (screen) sexY=6513 male
+   M132      A ref=8 alt=0 oth=0 d=8 
+   Z958      A ref=5 alt=0 oth=0 d=5 
+   CTS246    A ref=4 alt=0 oth=0 d=4 
+   Z906      A ref=7 alt=0 oth=0 d=7 
+== SC_GMFUL5306367 (screen) sexY=5637 male
+   M132      A ref=8 alt=0 oth=0 d=8 
+   Z958      A ref=7 alt=0 oth=0 d=7 
+   CTS246    A ref=3 alt=0 oth=0 d=3 
+   Z906      A ref=9 alt=0 oth=0 d=9 
+== SC_GMFUL5306369 (screen) sexY=7196 male
+   M132      A ref=8 alt=0 oth=0 d=8 
+   Z958      A ref=5 alt=0 oth=0 d=5 
+   CTS246    N ref=0 alt=0 oth=0 d=0 zero coverage
+   Z906      A ref=11 alt=0 oth=0 d=11 
+   Z15174    A ref=4 alt=0 oth=0 d=4 
+   Z15197    N ref=1 alt=0 oth=0 d=1 single usable fragment
+   Z15231    A ref=5 alt=0 oth=0 d=5 
+   Z15232    A ref=6 alt=0 oth=0 d=6 
+   Z15234    A ref=3 alt=0 oth=0 d=3 
+== SC_GMFUL5306371 (screen) sexY=5770 male
+   M132      A ref=5 alt=0 oth=0 d=5 
+   Z958      A ref=12 alt=0 oth=0 d=12 
+   CTS246    A ref=3 alt=0 oth=0 d=3 
+   Z906      A ref=7 alt=0 oth=0 d=7 
+== SC_GMFUL5306374 (screen) sexY=7304 male
+   M132      A ref=17 alt=0 oth=0 d=17 
+   Z958      A ref=7 alt=0 oth=0 d=7 
+   CTS246    A ref=2 alt=0 oth=0 d=2 
+   Z906      A ref=10 alt=0 oth=0 d=10 
+== SC_GMFUL5306375 (screen) sexY=5796 male
+   M132      A ref=5 alt=0 oth=0 d=5 
+   Z958      A ref=9 alt=0 oth=0 d=9 
+   CTS246    A ref=4 alt=0 oth=0 d=4 
+   Z906      A ref=7 alt=0 oth=0 d=7 
+== SC_GMFUL5306377 (screen) sexY=6047 male
+   M132      A ref=3 alt=0 oth=0 d=3 
+   Z958      A ref=4 alt=0 oth=0 d=4 
+   CTS246    A ref=3 alt=0 oth=0 d=3 
+   Z906      A ref=9 alt=0 oth=0 d=9 
+== SC_GMFUL5306387 (screen) sexY=4896 male
+   M132      A ref=6 alt=0 oth=0 d=6 
+   Z958      A ref=4 alt=0 oth=0 d=4 
+   CTS246    N ref=1 alt=0 oth=0 d=1 single usable fragment
+   Z906      A ref=9 alt=0 oth=0 d=9 
+   Z15174    A ref=6 alt=0 oth=0 d=6 
+   Z15197    A ref=2 alt=0 oth=0 d=2 
+   Z15231    A ref=7 alt=0 oth=0 d=7 
+   Z15232    A ref=6 alt=0 oth=0 d=6 
+   Z15234    A ref=8 alt=0 oth=0 d=8 
+== SC_GMFUL5306388 (screen) sexY=5203 male
+   M132      A ref=5 alt=0 oth=0 d=5 
+   Z958      A ref=3 alt=0 oth=0 d=3 
+   CTS246    A ref=4 alt=0 oth=0 d=4 
+   Z906      A ref=12 alt=0 oth=0 d=12 
+== SC_GMFUL5306389 (screen) sexY=5195 male
+   M132      A ref=7 alt=0 oth=0 d=7 
+   Z958      A ref=5 alt=0 oth=0 d=5 
+   CTS246    A ref=2 alt=0 oth=0 d=2 
+   Z906      A ref=6 alt=0 oth=0 d=6 
+== SC_GMFUL5306392 (screen) sexY=5406 male
+   M132      D ref=0 alt=5 oth=0 d=5 
+   Z958      D ref=0 alt=7 oth=0 d=7 
+   CTS246    A ref=2 alt=0 oth=0 d=2 
+   Z906      A ref=6 alt=0 oth=0 d=6 
+== SC_GMFUL5306395 (screen) sexY=5526 male
+   M132      A ref=2 alt=0 oth=0 d=2 
+   Z958      A ref=5 alt=0 oth=0 d=5 
+   CTS246    A ref=4 alt=0 oth=0 d=4 
+   Z906      A ref=9 alt=0 oth=0 d=9 
+== SC_GMFUL5306396 (screen) sexY=5503 male
+   M132      A ref=11 alt=0 oth=0 d=11 
+   Z958      A ref=5 alt=0 oth=0 d=5 
+   CTS246    N ref=1 alt=0 oth=0 d=1 single usable fragment
+   Z906      A ref=6 alt=0 oth=0 d=6 
+   Z15174    N ref=1 alt=0 oth=0 d=1 single usable fragment
+   Z15197    N ref=1 alt=0 oth=0 d=1 single usable fragment
+   Z15231    A ref=3 alt=0 oth=0 d=3 
+   Z15232    A ref=10 alt=0 oth=0 d=10 
+   Z15234    A ref=3 alt=0 oth=0 d=3 
+== SC_GMFUL5306397 (screen) sexY=5062 male
+   M132      A ref=4 alt=0 oth=0 d=4 
+   Z958      A ref=6 alt=0 oth=0 d=6 
+   CTS246    A ref=3 alt=0 oth=0 d=3 
+   Z906      A ref=7 alt=0 oth=0 d=7 
+== SC_GMFUL5306398 (screen) sexY=5192 male
+   M132      D ref=0 alt=12 oth=0 d=12 
+   Z958      D ref=0 alt=5 oth=0 d=5 
+   CTS246    N ref=1 alt=0 oth=0 d=1 single usable fragment
+   Z906      A ref=6 alt=0 oth=0 d=6 
+   Z15174    A ref=3 alt=0 oth=0 d=3 
+   Z15197    N ref=1 alt=0 oth=0 d=1 single usable fragment
+   Z15231    A ref=4 alt=0 oth=0 d=4 
+   Z15232    A ref=2 alt=0 oth=0 d=2 
+   Z15234    A ref=3 alt=0 oth=0 d=3 
+== SC_GMFUL5306399 (screen) sexY=4942 male
+   M132      A ref=5 alt=0 oth=0 d=5 
+   Z958      A ref=3 alt=0 oth=0 d=3 
+   CTS246    A ref=3 alt=0 oth=0 d=3 
+   Z906      A ref=11 alt=0 oth=0 d=11 
+== SC_GMFUL5306400 (screen_control_reused) sexY=5634 male
+   M132      D ref=0 alt=7 oth=0 d=7 
+   Z958      D ref=0 alt=2 oth=0 d=2 
+   CTS246    A ref=2 alt=0 oth=0 d=2 
+   Z906      A ref=6 alt=0 oth=0 d=6 
+== SC_GMFUL5306410 (screen) sexY=4830 male
+   M132      A ref=2 alt=0 oth=0 d=2 
+   Z958      A ref=6 alt=0 oth=0 d=6 
+   CTS246    A ref=3 alt=0 oth=0 d=3 
+   Z906      A ref=7 alt=0 oth=0 d=7 
+== SC_GMFUL5306411 (screen) sexY=4752 male
+   M132      A ref=5 alt=0 oth=0 d=5 
+   Z958      A ref=3 alt=0 oth=0 d=3 
+   CTS246    A ref=3 alt=0 oth=0 d=3 
+   Z906      A ref=6 alt=0 oth=0 d=6 
+== SC_GMFUL5306413 (screen) sexY=6021 male
+   M132      A ref=3 alt=0 oth=0 d=3 
+   Z958      A ref=3 alt=0 oth=0 d=3 
+   CTS246    A ref=3 alt=0 oth=0 d=3 
+   Z906      A ref=9 alt=0 oth=0 d=9 
+== SC_GMFUL5306415 (screen) sexY=5448 male
+   M132      A ref=7 alt=0 oth=0 d=7 
+   Z958      A ref=4 alt=0 oth=0 d=4 
+   CTS246    A ref=2 alt=0 oth=0 d=2 
+   Z906      A ref=8 alt=0 oth=0 d=8 
+== SC_GMFUL5306416 (screen) sexY=6403 male
+   M132      A ref=5 alt=0 oth=0 d=5 
+   Z958      A ref=4 alt=0 oth=0 d=4 
+   CTS246    A ref=2 alt=0 oth=0 d=2 
+   Z906      A ref=7 alt=0 oth=0 d=7 
+== SC_GMFUL5306418 (screen) sexY=6490 male
+   M132      A ref=5 alt=0 oth=0 d=5 
+   Z958      A ref=4 alt=0 oth=0 d=4 
+   CTS246    A ref=3 alt=0 oth=0 d=3 
+   Z906      A ref=5 alt=0 oth=0 d=5 
+== SC_GMFUL5306419 (screen) sexY=5677 male
+   M132      A ref=7 alt=0 oth=0 d=7 
+   Z958      A ref=3 alt=0 oth=0 d=3 
+   CTS246    A ref=7 alt=0 oth=0 d=7 
+   Z906      A ref=4 alt=0 oth=0 d=4 
+== SC_GMFUL5306420 (screen) sexY=5186 male
+   M132      A ref=2 alt=0 oth=0 d=2 
+   Z958      A ref=3 alt=0 oth=0 d=3 
+   CTS246    N ref=1 alt=0 oth=0 d=1 single usable fragment
+   Z906      A ref=13 alt=0 oth=0 d=13 
+   Z15174    A ref=2 alt=0 oth=0 d=2 
+   Z15197    N ref=1 alt=0 oth=0 d=1 single usable fragment
+   Z15231    A ref=2 alt=0 oth=0 d=2 
+   Z15232    A ref=6 alt=0 oth=0 d=6 
+   Z15234    A ref=2 alt=0 oth=0 d=2 
+== SC_GMFUL5306421 (screen) sexY=5488 male
+   M132      A ref=5 alt=0 oth=0 d=5 
+   Z958      A ref=3 alt=0 oth=0 d=3 
+   CTS246    A ref=2 alt=0 oth=0 d=2 
+   Z906      A ref=7 alt=0 oth=0 d=7 
+== SC_GMFUL5306423 (screen) sexY=5715 male
+   M132      A ref=8 alt=0 oth=0 d=8 
+   Z958      A ref=9 alt=0 oth=0 d=9 
+   CTS246    A ref=4 alt=0 oth=0 d=4 
+   Z906      A ref=9 alt=0 oth=0 d=9 
+== SC_GMFUL5306424 (screen) sexY=6438 male
+   M132      A ref=4 alt=0 oth=0 d=4 
+   Z958      N ref=1 alt=0 oth=0 d=1 single usable fragment
+   CTS246    A ref=4 alt=0 oth=0 d=4 
+   Z906      A ref=8 alt=0 oth=0 d=8 
+== SC_GMFUL5309701 (screen) sexY=5644 male
+   M132      A ref=9 alt=0 oth=0 d=9 
+   Z958      A ref=6 alt=0 oth=0 d=6 
+   CTS246    A ref=2 alt=0 oth=0 d=2 
+   Z906      A ref=7 alt=0 oth=0 d=7 
+== SC_GMFUL5309703 (screen) sexY=5484 male
+   M132      A ref=5 alt=0 oth=0 d=5 
+   Z958      A ref=2 alt=0 oth=0 d=2 
+   CTS246    A ref=3 alt=0 oth=0 d=3 
+   Z906      A ref=8 alt=0 oth=0 d=8 
+== SC_GMFUL5309708 (screen) sexY=5216 male
+   M132      A ref=5 alt=0 oth=0 d=5 
+   Z958      A ref=7 alt=0 oth=0 d=7 
+   CTS246    A ref=3 alt=0 oth=0 d=3 
+   Z906      A ref=6 alt=0 oth=0 d=6 
+== SC_GMFUL5309709 (screen) sexY=5297 male
+   M132      A ref=6 alt=0 oth=0 d=6 
+   Z958      N ref=1 alt=0 oth=0 d=1 single usable fragment
+   CTS246    A ref=4 alt=0 oth=0 d=4 
+   Z906      A ref=6 alt=0 oth=0 d=6 
+== SC_GMFUL5309710 (screen) sexY=5815 male
+   M132      A ref=6 alt=0 oth=0 d=6 
+   Z958      A ref=12 alt=0 oth=0 d=12 
+   CTS246    A ref=4 alt=0 oth=0 d=4 
+   Z906      A ref=4 alt=0 oth=0 d=4 
+== SC_GMFUL5309711 (screen) sexY=5109 male
+   M132      A ref=6 alt=0 oth=0 d=6 
+   Z958      N ref=1 alt=0 oth=0 d=1 single usable fragment
+   CTS246    A ref=4 alt=0 oth=0 d=4 
+   Z906      A ref=6 alt=0 oth=0 d=6 
+== SC_GMFUL5309730 (screen) sexY=5451 male
+   M132      A ref=4 alt=0 oth=0 d=4 
+   Z958      A ref=2 alt=0 oth=0 d=2 
+   CTS246    A ref=2 alt=0 oth=0 d=2 
+   Z906      A ref=11 alt=0 oth=0 d=11 
+== SC_GMFUL5309733 (screen) sexY=5387 male
+   M132      A ref=4 alt=0 oth=0 d=4 
+   Z958      A ref=8 alt=0 oth=0 d=8 
+   CTS246    A ref=3 alt=0 oth=0 d=3 
+   Z906      A ref=8 alt=0 oth=0 d=8 
+== SC_GMFUL5309735 (screen) sexY=7845 male
+   M132      A ref=7 alt=0 oth=0 d=7 
+   Z958      A ref=6 alt=0 oth=0 d=6 
+   CTS246    N ref=0 alt=0 oth=0 d=0 zero coverage
+   Z906      A ref=9 alt=0 oth=0 d=9 
+   Z15174    N ref=1 alt=0 oth=0 d=1 single usable fragment
+   Z15197    A ref=7 alt=0 oth=0 d=7 
+   Z15231    A ref=4 alt=0 oth=0 d=4 
+   Z15232    A ref=7 alt=0 oth=0 d=7 
+   Z15234    A ref=3 alt=0 oth=0 d=3 
+== SC_GMFUL5309747 (screen) sexY=6760 male
+   M132      A ref=3 alt=0 oth=0 d=3 
+   Z958      A ref=6 alt=0 oth=0 d=6 
+   CTS246    A ref=5 alt=0 oth=0 d=5 
+   Z906      A ref=10 alt=0 oth=0 d=10 
+== SC_GMFUL5309755 (screen) sexY=7354 male
+   M132      A ref=7 alt=0 oth=0 d=7 
+   Z958      A ref=11 alt=0 oth=0 d=11 
+   CTS246    A ref=7 alt=0 oth=0 d=7 
+   Z906      A ref=10 alt=0 oth=0 d=10 
+== SC_GMFUL5309756 (screen) sexY=7416 male
+   M132      A ref=7 alt=0 oth=0 d=7 
+   Z958      A ref=5 alt=0 oth=0 d=5 
+   CTS246    A ref=7 alt=0 oth=0 d=7 
+   Z906      A ref=7 alt=0 oth=0 d=7 
+== SC_GMFUL5309781 (screen) sexY=5836 male
+   M132      A ref=3 alt=0 oth=0 d=3 
+   Z958      N ref=0 alt=0 oth=0 d=0 zero coverage
+   CTS246    A ref=3 alt=0 oth=0 d=3 
+   Z906      A ref=7 alt=0 oth=0 d=7 
+== SC_GMMAN5482162 (screen) sexY=6124 male
+   M132      A ref=8 alt=0 oth=0 d=8 
+   Z958      N ref=0 alt=0 oth=0 d=0 zero coverage
+   CTS246    A ref=5 alt=0 oth=0 d=5 
+   Z906      A ref=6 alt=0 oth=0 d=6 
+== SC_GMMAN5482163 (screen) sexY=6879 male
+   M132      A ref=11 alt=0 oth=0 d=11 
+   Z958      A ref=10 alt=0 oth=0 d=10 
+   CTS246    A ref=6 alt=0 oth=0 d=6 
+   Z906      A ref=3 alt=0 oth=0 d=3 
+== SC_GMMAN5482180 (screen) sexY=6185 male
+   M132      A ref=13 alt=0 oth=0 d=13 
+   Z958      A ref=6 alt=0 oth=0 d=6 
+   CTS246    A ref=6 alt=0 oth=0 d=6 
+   Z906      A ref=9 alt=0 oth=0 d=9 
+== SC_GMMAN5482181 (screen) sexY=5838 male
+   M132      D ref=0 alt=9 oth=0 d=9 
+   Z958      D ref=0 alt=9 oth=0 d=9 
+   CTS246    D ref=0 alt=3 oth=0 d=3 
+   Z906      D ref=0 alt=6 oth=0 d=6 
+   Z15174    A ref=6 alt=0 oth=0 d=6 
+   Z15197    A ref=5 alt=0 oth=0 d=5 
+   Z15231    A ref=5 alt=0 oth=0 d=5 
+   Z15232    A ref=8 alt=0 oth=0 d=8 
+   Z15234    A ref=5 alt=0 oth=0 d=5 
+== SC_GMMAN5482184 (screen) sexY=4992 male
+   M132      D ref=0 alt=12 oth=0 d=12 
+   Z958      D ref=0 alt=2 oth=0 d=2 
+   CTS246    A ref=7 alt=0 oth=0 d=7 
+   Z906      A ref=3 alt=0 oth=0 d=3 
+== SC_GMMAN5482187 (screen) sexY=3296 male
+   M132      A ref=4 alt=0 oth=0 d=4 
+   Z958      N ref=1 alt=0 oth=0 d=1 single usable fragment
+   CTS246    A ref=4 alt=0 oth=0 d=4 
