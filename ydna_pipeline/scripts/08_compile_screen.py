@@ -13,7 +13,7 @@ cache, out_csv, out_md = sys.argv[1:4]
 recs = [json.load(open(f)) for f in sorted(glob.glob(f'{cache}/*.json'))]
 cols = ['sample_id', 'population', 'source_dataset', 'inferred_sex', 'sex_window_reads', 'site_id', 'grch38_pos', 'ref', 'alt',
         'call_classification', 'confidence', 'callable', 'usable_depth', 'ref_reads', 'alt_reads', 'other_reads',
-        'alt_strands', 'alt_reads_in_filtered_out', 'raw_primary_reads', 'excluded_dup_secondary', 'low_mapq_reads',
+        'alt_strands', 'alt_reads_in_filtered_out', 'depth_unit', 'overlapping_mate_pairs', 'conflicting_mate_pairs', 'raw_primary_reads', 'excluded_dup_secondary', 'low_mapq_reads',
         'clipped_reads', 'suboptimal_reads', 'low_bq_reads', 'frac_lowmapq', 'mapq_median', 'bq_median',
         'confirmation_status', 'cram_url', 'error']
 for r in recs:
@@ -63,5 +63,13 @@ L.append(f"Sex-window read counts: females max {max(fem) if fem else '-'}, males
 alt_any = [r for r in recs if int(r.get('alt_reads') or 0) > 0 or int(r.get('alt_reads_in_filtered_out') or 0) > 0]
 L.append(f"Males with ANY read carrying C at FTF75935 (incl. filtered-out reads): {len(alt_any)}"
          + (': ' + ', '.join(f"{r['sample_id']} ({r['alt_reads']} usable, {r.get('alt_reads_in_filtered_out')} filtered)" for r in alt_any) if alt_any else ''))
+L.append('')
+L.append('Detection limit if zero carriers (exact one-sided 95% upper bound on carrier frequency among callable males, 1 - 0.05^(1/n)):\n')
+L.append('| Population | Callable males with an ancestral call (n) | 95% upper bound on FTF75935 frequency |\n|---|---|---|')
+for p in pops + ['ALL']:
+    m = [r for r in (recs if p == 'ALL' else by[p]) if r['inferred_sex'] == 'male' and r.get('call_classification') == 'ANCESTRAL_SUPPORTED']
+    if any(r.get('call_classification') == 'DERIVED_SUPPORTED' for r in (recs if p == 'ALL' else by[p])):
+        continue
+    n = len(m); L.append(f"| {p} | {n} | {(1 - 0.05 ** (1 / n)) * 100:.1f}% |" if n else f'| {p} | 0 | - |')
 open(out_md, 'w').write('\n'.join(L) + '\n')
 print('\n'.join(L))

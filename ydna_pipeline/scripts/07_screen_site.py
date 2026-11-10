@@ -92,9 +92,17 @@ def evaluate(lines, a):
         elif bq < a.min_bq:
             lowbq += 1; st_ = 'lowbq'
         else:
-            good.append((b, mapq, '-' if flag & 16 else '+', bq)); st_ = 'used'
+            good.append((b, mapq, '-' if flag & 16 else '+', bq, f[0])); st_ = 'used'
         if st_ != 'used' and b == alt_b:
             alt_drop += 1
+    # Count each DNA fragment once: overlapping mates of one pair are not independent.
+    # Same base on both mates -> keep the higher-BQ mate; different bases -> drop both.
+    frag = {}
+    for g in good:
+        frag.setdefault(g[4], []).append(g)
+    mate_overlap = sum(1 for v in frag.values() if len(v) > 1)
+    mate_conflict = sum(1 for v in frag.values() if len(v) > 1 and len({x[0] for x in v}) > 1)
+    good = [max(v, key=lambda x: x[3]) for v in frag.values() if len({x[0] for x in v}) == 1]
     c = Counter(g[0] for g in good); r, al = c.get(ref_b, 0), c.get(alt_b, 0)
     oth = sum(v for k, v in c.items() if k not in (ref_b, alt_b)); d = len(good)
     flm = sum(1 for m in pm if m < a.min_mapq) / len(pm) if pm else 0.0
@@ -102,7 +110,7 @@ def evaluate(lines, a):
     sup = al if cls == 'DERIVED_SUPPORTED' else r
     strands = len({g[2] for g in good if g[0] == (alt_b if cls == 'DERIVED_SUPPORTED' else ref_b)})
     conf = ev.confidence(cls, sup, strands, 'pass', flm)
-    return dict(raw_primary_reads=raw, excluded_dup_secondary=excl, low_mapq_reads=lowmq, clipped_reads=clipped,
+    return dict(overlapping_mate_pairs=mate_overlap, conflicting_mate_pairs=mate_conflict, depth_unit='fragments', raw_primary_reads=raw, excluded_dup_secondary=excl, low_mapq_reads=lowmq, clipped_reads=clipped,
                 suboptimal_reads=subopt, low_bq_reads=lowbq, usable_depth=d, ref_reads=r, alt_reads=al, other_reads=oth,
                 alt_reads_in_filtered_out=alt_drop,
                 alt_strands=f"{sum(1 for g in good if g[0]==alt_b and g[2]=='+')}/{sum(1 for g in good if g[0]==alt_b and g[2]=='-')}",
