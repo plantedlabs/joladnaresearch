@@ -114,6 +114,7 @@ def evaluate(lines, a):
                 suboptimal_reads=subopt, low_bq_reads=lowbq, usable_depth=d, ref_reads=r, alt_reads=al, other_reads=oth,
                 alt_reads_in_filtered_out=alt_drop,
                 alt_strands=f"{sum(1 for g in good if g[0]==alt_b and g[2]=='+')}/{sum(1 for g in good if g[0]==alt_b and g[2]=='-')}",
+                ref_strands=f"{sum(1 for g in good if g[0]==ref_b and g[2]=='+')}/{sum(1 for g in good if g[0]==ref_b and g[2]=='-')}",
                 mapq_median=(st.median(g[1] for g in good) if good else ''), bq_median=(st.median(g[3] for g in good) if good else ''),
                 frac_lowmapq=round(flm, 3), call_classification=cls, confidence=conf,
                 callable='yes' if cls in ('DERIVED_SUPPORTED', 'ANCESTRAL_SUPPORTED', 'MIXED_AMBIGUOUS') else 'no')

@@ -1,0 +1,25 @@
+marker,kind,grch38_pos,config_ref,config_alt,analysisset_ref,ybrowse_ids_at_pos,ybrowse_ref_alt_match,ybrowse_AA,orientation,name_at_coordinate,yfull_node,yfull_equivalence,verdict
+M132,tree_marker,19734375,G,T,G,M132,True,G,"ancestral=REF, derived=ALT",True,E-M132,listed in YFull block,PASS
+Z958,tree_marker,20558142,C,T,C,"CTS10713,Z958",True,C,"ancestral=REF, derived=ALT",True,E-Z958,listed in YFull block,PASS
+CTS246,tree_marker,2972260,G,A,G,"CTS246,V1119",True,G,"ancestral=REF, derived=ALT",True,E-CTS246,listed in YFull block,PASS
+Z906,tree_marker,8360264,T,C,T,Z906,True,T,"ancestral=REF, derived=ALT",True,E-CTS246 block,listed in YFull block,PASS
+Z15174,tree_marker,4202358,G,T,G,Z15174,True,G,"ancestral=REF, derived=ALT",True,E-Z15174,listed in YFull block,PASS
+Z15197,tree_marker,8414659,C,T,C,Z15197,True,C,"ancestral=REF, derived=ALT",True,E-Z15174,listed in YFull block,PASS
+Z15231,tree_marker,14719978,G,A,G,Z15231,True,G,"ancestral=REF, derived=ALT",True,E-Z15174,listed in YFull block,PASS
+Z15232,tree_marker,14765245,T,C,T,Z15232,True,T,"ancestral=REF, derived=ALT",True,E-Z15174,listed in YFull block,PASS
+Z15234,tree_marker,15274693,C,G,C,Z15234,True,C,"ancestral=REF, derived=ALT",True,E-Z15174,listed in YFull block,PASS
+Z5991,tree_marker,2849335,C,T,C,Z5991,True,C,"ancestral=REF, derived=ALT",True,E-Z5991,listed in YFull block,PASS
+FT402211,tree_marker,9176816,A,G,A,FT402211,True,A,"ancestral=REF, derived=ALT",True,E-FT402211,listed in YFull block,PASS
+Z15196,tree_marker,8336326,A,C,A,Z15196,True,A,"ancestral=REF, derived=ALT",True,E-Z15196,listed in YFull block,PASS
+FTF75935,tree_marker,2895562,A,C,A,FTF75935,True,A,"ancestral=REF, derived=ALT",True,E-FTF75935,FTDNA-only node (not on YFull; YF133256 = E-Z15174* there): equivalence not checkable,PASS
+PV05,tierA_candidate,6926993,A,G,A,FTG41053,True,A,"ancestral=REF, derived=ALT",True,,n/a (candidate marker),PASS
+PV06,tierA_candidate,7013476,T,C,T,FTG41059,True,T,"ancestral=REF, derived=ALT",True,,n/a (candidate marker),PASS
+PV07,tierA_candidate,7758704,C,A,C,FTG41099,True,C,"ancestral=REF, derived=ALT",True,,n/a (candidate marker),PASS
+PV11,tierA_candidate,14952809,C,A,C,FTG41431,True,C,"ancestral=REF, derived=ALT",True,,n/a (candidate marker),PASS
+PV12,tierA_candidate,15252463,T,C,T,FTC76522,True,T,"ancestral=REF, derived=ALT",True,,n/a (candidate marker),PASS
+PV13,tierA_candidate,15391518,G,A,G,FTG41453;FT365779,True,G,"ancestral=REF, derived=ALT",True,,n/a (candidate marker),PASS
+PV14,tierA_candidate,15936416,G,A,G,FTG41498,True,G,"ancestral=REF, derived=ALT",True,,n/a (candidate marker),PASS
+PV15,tierA_candidate,15990294,C,A,C,FTG41501,True,C,"ancestral=REF, derived=ALT",True,,n/a (candidate marker),PASS
+PV16,tierA_candidate,18949120,C,T,C,FTG41615,True,C,"ancestral=REF, derived=ALT",True,,n/a (candidate marker),PASS
+PV17,tierA_candidate,21349919,G,A,G,FTG41747,True,G,"ancestral=REF, derived=ALT",True,,n/a (candidate marker),PASS
+PV19,tierA_candidate,26572350,C,T,C,FTG41790,True,C,"ancestral=REF, derived=ALT",True,,n/a (candidate marker),PASS
