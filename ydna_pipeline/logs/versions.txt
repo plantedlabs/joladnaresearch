@@ -1,0 +1,4 @@
+samtools 1.19.2
+Using htslib 1.19
+Python 3.13.18
+Version: 0.7.17-r1188

@@ -1,0 +1,5 @@
+#id	chrom	pos_grch38	ref	alt	yfull_node	coord_source
+Z15174	chrY	4202358	G	T	E-Z15174	repo run_all.sh (coordinate NOT independently verified)
+Z15234	chrY	8414659	C	T	E-Z15174	repo run_all.sh (coordinate NOT independently verified)
+Z15231	chrY	14719978	G	A	E-Z15174	repo run_all.sh (coordinate NOT independently verified)
+Z15232	chrY	14765245	T	C	E-Z15174	repo run_all.sh (coordinate NOT independently verified)

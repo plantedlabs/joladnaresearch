@@ -1,0 +1,6 @@
+#sample	population	role	yfull_branch	cram_url
+SC_GMJOL5309804	Jola (GGVP GWJ)	target_P1	E-FT402211	https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/gambian_genome_variation_project/data/JOLA/SC_GMJOL5309804/alignment/SC_GMJOL5309804.alt_bwamem_GRCh38DH.20151208.JOLA.gambian_lowcov.cram
+SC_GMJOL5309851	Jola (GGVP GWJ)	target_P2	E-FT402211	https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/gambian_genome_variation_project/data/JOLA/SC_GMJOL5309851/alignment/SC_GMJOL5309851.alt_bwamem_GRCh38DH.20151208.JOLA.gambian_lowcov.cram
+SC_GMJOL5309829	Jola (GGVP GWJ)	target_P3	E-Z15196	https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/gambian_genome_variation_project/data/JOLA/SC_GMJOL5309829/alignment/SC_GMJOL5309829.alt_bwamem_GRCh38DH.20151208.JOLA.gambian_lowcov.cram
+SC_GMJOL5309875	Jola (GGVP GWJ)	control	not E-Z15174 (repo screen)	https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/gambian_genome_variation_project/data/JOLA/SC_GMJOL5309875/alignment/SC_GMJOL5309875.alt_bwamem_GRCh38DH.20151208.JOLA.gambian_lowcov.cram
+SC_GMJOL5309805	Jola (GGVP GWJ)	control	not E-Z15174 (repo screen)	https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/gambian_genome_variation_project/data/JOLA/SC_GMJOL5309805/alignment/SC_GMJOL5309805.alt_bwamem_GRCh38DH.20151208.JOLA.gambian_lowcov.cram

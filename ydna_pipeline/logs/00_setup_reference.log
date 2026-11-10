@@ -1,0 +1,8 @@
+[fetch] chrY len=57227415 bytes=58044950 offset=3074345836
+[ok] chrY md5 verified: ce3e31103314a704255f3cd90369ecce
+[fetch] chrX len=156040895 bytes=158270051 offset=2916075638
+[ok] chrX md5 verified: 2b3a55ff7f58eb308420c8a9b11cac50
+
+Reference ready. Use:
+  export REF_PATH=/home/user/joladnaresearch/ydna_pipeline/scripts/../ref/cache/%2s/%2s/%s REF_CACHE=/home/user/joladnaresearch/ydna_pipeline/scripts/../ref/cache/%2s/%2s/%s
+  samtools view -T /home/user/joladnaresearch/ydna_pipeline/scripts/../ref/chrY_analysisset.fa <CRAM_URL> chrY:POS-POS
