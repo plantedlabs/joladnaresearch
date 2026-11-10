@@ -131,3 +131,20 @@ published for GGVP**, so CRAM pileup is required.
 ### Ranking
 `scripts/05_rank_private_snps.py` scores each SNP additively, and every deduction is printed. There is one
 documented manual override: PV10 −4 for read forensics.
+
+---
+
+## FTF75935 population screen (2026-11-10)
+* Manifest: `config/ggvp_manifest.tsv`, built from the GGVP alignment index (394 CRAMs; CRAM MD5s recorded).
+* Sex: `samtools view -c -q 20 -F 0xF04` over chrY:7,000,001–7,100,000 (100% Umap k100 unique).
+  Thresholds: ≤ 60 female, ≥ 300 male. Observed: female max 56, male min 890, 1 ambiguous (63).
+* Site: same strict filters as `02_cram_site_evidence.py`, imported from it rather than duplicated. v2 adds
+  fragment-level counting: overlapping mates are counted once, and dropped if they disagree.
+* Load: 2 worker threads, 1 s submission delay; per-sample JSON cache; `.crai` cached in `ref/crai_cache/`
+  (~0.66 MB each). Full run 1,534 s (v1, all 394), then 987 s (v2 re-screen of 204 male/ambiguous). 0 errors.
+* v1 → v2: 6 depth decrements, 0 call changes. v1 results are kept in `results/ftf75935_screen/cache_v1_superseded/`.
+* 1000 Genomes: `tabix` / `bcftools query` against the NYGC chrY VCFs (remote, indexed):
+  `20190425_NYGC_GATK/CCDG_13607_B01_GRM_WGS_2019-02-19_chrY.recalibrated_variants.vcf.gz` (2,504 samples) and
+  `20200921_3202_NYGC_GATK_preQC/CCDG_14151_B01_GRM_WGS_2020-08-05_chrY.recalibrated_variants.vcf.gz` (3,202 samples).
+  No record at 2,895,562. Controls Z15174, Z15234, Z5991 and Z15196 are each called in exactly HG03024/HG03027
+  (+ HG03029 in the 3202 set).

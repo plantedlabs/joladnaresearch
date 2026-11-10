@@ -13,9 +13,19 @@ Usable-depth distribution at FTF75935 (males):
 | FULA | 0 | 14 | 13 | 7 | 11 | 6 | 0 |
 | JOLA | 3 | 5 | 12 | 7 | 13 | 6 | 1 |
 | MANDINKA | 0 | 3 | 9 | 4 | 19 | 12 | 2 |
-| WOLOFF | 2 | 4 | 8 | 5 | 25 | 11 | 1 |
-| ALL | 5 | 26 | 42 | 23 | 68 | 35 | 4 |
+| WOLOFF | 2 | 4 | 8 | 6 | 24 | 11 | 1 |
+| ALL | 5 | 26 | 42 | 24 | 67 | 35 | 4 |
 
 Sex-window read counts: females max 56, males min 890 (thresholds ≤60 female, ≥300 male).
 
 Males with ANY read carrying C at FTF75935 (incl. filtered-out reads): 0
+
+Detection limit if zero carriers (exact one-sided 95% upper bound on carrier frequency among callable males, 1 - 0.05^(1/n)):
+
+| Population | Callable males with an ancestral call (n) | 95% upper bound on FTF75935 frequency |
+|---|---|---|
+| FULA | 37 | 7.8% |
+| JOLA | 39 | 7.4% |
+| MANDINKA | 46 | 6.3% |
+| WOLOFF | 49 | 5.9% |
+| ALL | 171 | 1.7% |
