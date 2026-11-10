@@ -87,27 +87,38 @@ def node_status(calls, snps):
 
 
 def placement(st):
-    order = ['E-M132', 'E-Z958', 'E-CTS246', 'E-Z15174', 'E-Z5991']
-    deepest = 'unplaced (E-M132 not derived)' if st['E-M132'][0] == 'NOT_DERIVED' else 'unresolved'
-    for n in order:
-        if st[n][0] == 'DERIVED':
-            deepest = n
-        elif st[n][0] in ('UNKNOWN', 'CONFLICT') and deepest.startswith('E-'):
-            return deepest + f' ({n} {st[n][0].lower()})'
-        elif st[n][0] == 'NOT_DERIVED' and deepest.startswith('E-'):
-            label = {'E-Z958': 'other E-M132 (not E-Z958)', 'E-CTS246': 'E-Z958, not E-CTS246',
-                     'E-Z15174': 'E-CTS246, not E-Z15174 (sister lineage)',
-                     'E-Z5991': 'E-Z15174, not E-Z5991'}.get(n, deepest)
-            if n == 'E-Z5991':
-                f = st['E-FTF75935'][0]
-                return label + (' and not E-FTF75935: candidate NEW E-Z15174 lineage' if f == 'NOT_DERIVED' else
-                                ' and E-FTF75935 DERIVED' if f == 'DERIVED' else f' (E-FTF75935 {f.lower()})')
-            return label
-    if deepest == 'E-Z5991':
-        for sub in ('E-FT402211', 'E-Z15196'):
-            if st[sub][0] == 'DERIVED':
-                return sub
-    return deepest
+    """Deepest node supported by DERIVED calls. A derived child implies its (verified) parent even if the
+    parent's own SNP is a no-call; that is noted, never imputed as ancestral. 'Outside' a node requires
+    NOT_DERIVED by its rule (>=2 SNPs A for multi-SNP nodes; single-SNP nodes flagged)."""
+    chain = ['E-M132', 'E-Z958', 'E-CTS246', 'E-Z15174', 'E-Z5991']
+    tips = ['E-FT402211', 'E-Z15196']
+    derived = [n for n in chain + tips if st[n][0] == 'DERIVED']
+    conflicts = [n for n in chain + tips + ['E-FTF75935'] if st[n][0] == 'CONFLICT']
+    if conflicts:
+        return 'CONFLICTING evidence at ' + ','.join(conflicts) + ' (inspect reads)'
+    if not derived:
+        if st['E-M132'][0] == 'NOT_DERIVED':
+            return 'not E-M132 (M132 ancestral; single defining SNP)'
+        return 'unresolved (E-M132 ' + st['E-M132'][0].lower() + ')'
+    deepest = max(derived, key=lambda n: (chain + tips).index(n) if n in chain else len(chain))
+    implied = [n for n in chain[:chain.index(deepest) if deepest in chain else len(chain)] if st[n][0] != 'DERIVED']
+    note = f" [{', '.join(implied)} implied by derived descendant; own SNP {'/'.join(st[n][0].lower() for n in implied)}]" if implied else ''
+    if deepest in tips:
+        return deepest + note
+    nxt = {'E-M132': 'E-Z958', 'E-Z958': 'E-CTS246', 'E-CTS246': 'E-Z15174', 'E-Z15174': 'E-Z5991'}.get(deepest)
+    if nxt is None:  # E-Z5991 with no tip derived
+        return 'E-Z5991 (tips ' + '/'.join(st[t][0].lower() for t in tips) + ')' + note
+    ns = st[nxt][0]
+    if ns == 'NOT_DERIVED':
+        lab = {'E-M132': 'E-M132, not E-Z958', 'E-Z958': 'E-Z958, not E-CTS246',
+               'E-CTS246': 'E-CTS246, not E-Z15174 (E-CTS246 sister lineage)',
+               'E-Z15174': 'E-Z15174, not E-Z5991'}[deepest]
+        if deepest == 'E-Z15174':
+            f = st['E-FTF75935'][0]
+            lab += (' and not E-FTF75935: candidate NEW E-Z15174 lineage' if f == 'NOT_DERIVED'
+                    else ' and E-FTF75935 DERIVED' if f == 'DERIVED' else f' (E-FTF75935 {f.lower()})')
+        return lab + note
+    return f'{deepest} ({nxt} {ns.lower()})' + note
 
 
 def main():

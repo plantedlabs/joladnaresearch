@@ -117,3 +117,18 @@
    M132      A ref=18 alt=0 oth=0 d=18 
    Z958      A ref=21 alt=0 oth=0 d=21 
    CTS246    A ref=12 alt=0 oth=0 d=12 
+   Z906      A ref=9 alt=0 oth=0 d=9 
+SC_GMJOL5309829    control_positive       E-Z15174 (E-Z5991 unknown)
+SC_GMFUL5306400    control_negative       E-Z958, not E-CTS246
+SC_GMMAN5482228    test                   unplaced (E-M132 not derived)
+SC_GMMAN5482185    test                   E-M132 (E-Z958 unknown)
+SC_GMMAN5482178    test                   unplaced (E-M132 not derived)
+SC_GMMAN5482207    test                   E-CTS246, not E-Z15174 (sister lineage)
+SC_GMMAN5482240    test                   E-Z958, not E-CTS246
+SC_GMWOF5428831    test                   unplaced (E-M132 not derived)
+SC_GMWOF5428829    test                   unplaced (E-M132 not derived)
+SC_GMWOF5428855    test                   unplaced (E-M132 not derived)
+SC_GMWOF5428877    test                   unplaced (E-M132 not derived)
+SC_GMWOF5428879    test                   unplaced (E-M132 not derived)
+HGDP00904          test                   unplaced (E-M132 not derived)
+HGDP00905          test                   unplaced (E-M132 not derived)

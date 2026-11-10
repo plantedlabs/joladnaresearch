@@ -1,0 +1,15 @@
+sample_id,population_label,dataset,role,M132,Z958,CTS246,Z906,Z15174,Z15197,Z15231,Z15232,Z15234,Z5991,FT402211,Z15196,FTF75935,PV05,PV06,PV07,PV11,PV12,PV13,PV14,PV15,PV16,PV17,PV19,placement
+SC_GMJOL5309829,GGVP Jola,GGVP low-cov CRAM,control_positive,D,D,D,D,N,D,D,D,D,N,A,D,A,A,A,A,A,A,A,A,A,N,A,A,E-Z15196 [E-Z5991 implied by derived descendant; own SNP unknown]
+SC_GMFUL5306400,GGVP Fula,GGVP low-cov CRAM,control_negative,D,D,A,A,A,A,A,N,A,A,A,A,A,N,A,A,A,A,A,A,A,A,A,A,"E-Z958, not E-CTS246"
+SC_GMMAN5482228,GGVP Mandinka,GGVP low-cov CRAM,test,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMMAN5482185,GGVP Mandinka,GGVP low-cov CRAM,test,D,N,D,D,A,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-CTS246, not E-Z15174 (E-CTS246 sister lineage) [E-Z958 implied by derived descendant; own SNP unknown]"
+SC_GMMAN5482178,GGVP Mandinka,GGVP low-cov CRAM,test,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMMAN5482207,GGVP Mandinka,GGVP low-cov CRAM,test,D,D,D,D,A,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-CTS246, not E-Z15174 (E-CTS246 sister lineage)"
+SC_GMMAN5482240,GGVP Mandinka,GGVP low-cov CRAM,test,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMWOF5428831,GGVP Wolof,GGVP low-cov CRAM,test,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMWOF5428829,GGVP Wolof,GGVP low-cov CRAM,test,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMWOF5428855,GGVP Wolof,GGVP low-cov CRAM,test,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMWOF5428877,GGVP Wolof,GGVP low-cov CRAM,test,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMWOF5428879,GGVP Wolof,GGVP low-cov CRAM,test,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+HGDP00904,HGDP Mandenka (Senegal),HGDP high-cov CRAM (EBI),test,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+HGDP00905,HGDP Mandenka (Senegal),HGDP high-cov CRAM (EBI),test,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
