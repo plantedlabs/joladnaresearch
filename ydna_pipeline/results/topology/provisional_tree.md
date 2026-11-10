@@ -58,3 +58,12 @@ All 156 GGVP Fula, Mandinka and Wolof males are now classified (`docs/UPSTREAM_S
   2 more (Fula 5306398, Mandinka 5482307) are E-Z958 with CTS246 unresolved.
 * **E-M132, not E-Z958:** 2 Mandinka (Z958 ancestral; single SNP).
 * **Not E-M132:** 137 men (single defining SNP).
+
+## Update after the GGVP Jola re-screen (Phase 1)
+
+All 203 GGVP males are now classified with one rule set (`results/ggvp_all/`):
+* **E-Z15174 = 3** (the known Jola men; all on E-Z5991); 199 excluded on ≥ 2 SNPs; 1 unknown.
+* 44 Jola men screened; 23 YFull-placed men concordant (0 contradictions).
+* New E-Z958 (not E-CTS246) Jola men absent from YFull: **SC_GMJOL5309950, SC_GMJOL5309952**
+  (raw reads validated).
+See `docs/JOLA_RESCREEN_REPORT.md` §4 for the full tree.

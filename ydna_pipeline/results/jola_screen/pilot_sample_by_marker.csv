@@ -1,0 +1,45 @@
+sample_id,population_label,dataset,role,M132,Z958,CTS246,Z906,Z15174,Z15197,Z15231,Z15232,Z15234,Z5991,FT402211,Z15196,FTF75935,PV05,PV06,PV07,PV11,PV12,PV13,PV14,PV15,PV16,PV17,PV19,placement
+SC_GMJOL5309805,GGVP Jola,GGVP low-cov CRAM,screen,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309827,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309828,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309844,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,N,A,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,E-Z958 (E-CTS246 unknown)
+SC_GMJOL5309852,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309868,GGVP Jola,GGVP low-cov CRAM,screen,A,A,A,N,A,A,N,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309875,GGVP Jola,GGVP low-cov CRAM,screen,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309876,GGVP Jola,GGVP low-cov CRAM,screen,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309891,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,N,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246 [E-M132 implied by derived descendant; own SNP unknown]"
+SC_GMJOL5309897,GGVP Jola,GGVP low-cov CRAM,screen,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309898,GGVP Jola,GGVP low-cov CRAM,screen,N,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,unresolved (E-M132 unknown)
+SC_GMJOL5309899,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309903,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309904,GGVP Jola,GGVP low-cov CRAM,screen,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309905,GGVP Jola,GGVP low-cov CRAM,screen,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309919,GGVP Jola,GGVP low-cov CRAM,screen,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309921,GGVP Jola,GGVP low-cov CRAM,screen,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309922,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309925,GGVP Jola,GGVP low-cov CRAM,screen,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309926,GGVP Jola,GGVP low-cov CRAM,screen,A,M,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309927,GGVP Jola,GGVP low-cov CRAM,screen,A,A,N,A,A,A,A,A,N,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309928,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309937,GGVP Jola,GGVP low-cov CRAM,screen,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309940,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309941,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309942,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309944,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309945,GGVP Jola,GGVP low-cov CRAM,screen,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309948,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309949,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309950,GGVP Jola,GGVP low-cov CRAM,screen,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309951,GGVP Jola,GGVP low-cov CRAM,screen,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309952,GGVP Jola,GGVP low-cov CRAM,screen,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309953,GGVP Jola,GGVP low-cov CRAM,screen,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309963,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309967,GGVP Jola,GGVP low-cov CRAM,screen,A,A,N,A,A,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309968,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309971,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309972,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309973,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,N,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,E-M132 (E-Z958 unknown)
+SC_GMJOL5309974,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309975,GGVP Jola,GGVP low-cov CRAM,screen,A,A,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,not E-M132 (M132 ancestral; single defining SNP)
+SC_GMJOL5309976,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
+SC_GMJOL5309977,GGVP Jola,GGVP low-cov CRAM,screen_yfull_placed,D,D,A,A,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,"E-Z958, not E-CTS246"
