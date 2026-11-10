@@ -42,3 +42,19 @@ TMRCA 7,000; E-Z5991 formed 7,000 / TMRCA 2,300.
 **Not yet tested at the E-CTS246 or E-Z15174 level:** GGVP Mandinka (49 males), Wolof (56) and most Fula (51)
 males; HGDP Mandenka (20, high coverage); SGDP West Africans. YFull's tree contains no GGVP Mandinka or Wolof
 samples, so it offers no placement for them.
+
+---
+
+## Update after the full GGVP upstream screen (2026-11-10)
+
+All 156 GGVP Fula, Mandinka and Wolof males are now classified (`docs/UPSTREAM_SCREEN_REPORT.md`):
+
+* **E-Z15174: 0 men.** 155 are excluded with ≥ 2 ancestral SNPs (23 at the block, 132 at E-CTS246);
+  1 is unknown (SC_GMWOF5428755, coverage).
+* **E-CTS246 sister lineages, subclade undetermined [obs-CRAM]:**
+  * GGVP Mandinka SC_GMMAN5482181, 5482185, 5482191, 5482207, 5482299
+  * GGVP Wolof SC_GMWOF5428789, 5428805
+* **E-Z958, not E-CTS246 [obs-CRAM]:** 2 Fula (incl. YFull-placed 5306392, 5306400) and 4 Mandinka.
+  2 more (Fula 5306398, Mandinka 5482307) are E-Z958 with CTS246 unresolved.
+* **E-M132, not E-Z958:** 2 Mandinka (Z958 ancestral; single SNP).
+* **Not E-M132:** 137 men (single defining SNP).
