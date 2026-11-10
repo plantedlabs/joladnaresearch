@@ -51,3 +51,9 @@
 == SC_GMMAN5482228 (test) sexY=6601 male
    M132      A ref=11 alt=0 oth=0 d=11 
    Z958      A ref=4 alt=0 oth=0 d=4 
+   CTS246    A ref=6 alt=0 oth=0 d=6 
+   Z906      A ref=6 alt=0 oth=0 d=6 
+== SC_GMMAN5482185 (test) sexY=4882 male
+   M132      D ref=0 alt=2 oth=0 d=2 
+   Z958      N ref=0 alt=1 oth=0 d=1 single usable fragment
+   CTS246    D ref=0 alt=5 oth=0 d=5 
