@@ -17,14 +17,14 @@ position, and applies read-level filters:
   near-end:  base within 5 bp of a read end (incl. soft clip) -> counted, still used
 
 Classification (haploid chrY; zero/low coverage is NEVER called reference):
-  UNRELIABLE_MAPPING     >50% of primary non-dup reads have MAPQ < min-mapq,
+  UNRELIABLE_MAPPING     >50% (and >=2) of primary non-dup reads have MAPQ < min-mapq,
                          or preliminary mappability flag = 'fail'
   INSUFFICIENT_COVERAGE  < 2 filtered reads
   DERIVED_SUPPORTED      >= 2 filtered alt reads and alt fraction >= 0.9
   ANCESTRAL_SUPPORTED    >= 2 filtered ref reads and ref fraction >= 0.9
   MIXED_AMBIGUOUS        anything else (incl. third alleles)
-Confidence: high = >=4 supporting reads on both strands and no mappability
-caveat; moderate = >=3 supporting reads; low = 2 supporting reads or caveat.
+Confidence: high = >=4 supporting reads on both strands, no mappability
+caveat and <=25% low-MAPQ reads; moderate = >=3 supporting reads; low = 2 supporting reads or caveat.
 """
 import argparse, csv, re, subprocess, sys, time, statistics as st
 from collections import Counter
@@ -76,8 +76,8 @@ def fetch(cram, ref_fa, region, timeout, retries):
     return None, err
 
 
-def classify(ref_n, alt_n, oth_n, frac_lowmq, mapflag, depth):
-    if mapflag == 'fail' or frac_lowmq > 0.5:
+def classify(ref_n, alt_n, oth_n, frac_lowmq, mapflag, depth, n_lowmq):
+    if mapflag == 'fail' or (frac_lowmq > 0.5 and n_lowmq >= 2):
         return 'UNRELIABLE_MAPPING'
     if depth < 2:
         return 'INSUFFICIENT_COVERAGE'
@@ -88,10 +88,10 @@ def classify(ref_n, alt_n, oth_n, frac_lowmq, mapflag, depth):
     return 'MIXED_AMBIGUOUS'
 
 
-def confidence(cls, sup_n, sup_strands, mapflag):
+def confidence(cls, sup_n, sup_strands, mapflag, frac_lowmq=0.0):
     if cls not in ('DERIVED_SUPPORTED', 'ANCESTRAL_SUPPORTED'):
         return 'none'
-    if sup_n >= 4 and sup_strands == 2 and mapflag == 'pass':
+    if sup_n >= 4 and sup_strands == 2 and mapflag == 'pass' and frac_lowmq <= 0.25:
         return 'high'
     if sup_n >= 3 and mapflag != 'caution':
         return 'moderate'
@@ -141,7 +141,7 @@ def main():
             'filtered_depth', 'filtered_ref_reads', 'filtered_alt_reads', 'filtered_other_reads',
             'observed_alleles', 'alt_strands_fwd_rev', 'ref_strands_fwd_rev',
             'mapq_median_filtered', 'mapq_min_filtered', 'frac_primary_lowmapq',
-            'bq_median_filtered', 'near_read_end_reads', 'softclipped_reads',
+            'bq_median_filtered', 'alt_reads_in_filtered_out', 'near_read_end_reads', 'softclipped_reads',
             'mappability_prelim', 'callable', 'call_classification', 'confidence', 'interpretation', 'error']
     out = open(a.out, 'w', newline=''); w = csv.DictWriter(out, fieldnames=cols); w.writeheader()
     rout = open(a.reads_out, 'w')
@@ -167,6 +167,7 @@ def main():
             raw = excl = lowmq = lowbq = 0
             primary_mapqs = []
             good = []  # (base, mapq, strand, bq, dist, soft)
+            alt_dropped = 0
             for ln in lines:
                 f = ln.split('\t')
                 flag, mapq, start, cigar, seq, qual = int(f[1]), int(f[4]), int(f[3]), f[5], f[9], f[10]
@@ -184,6 +185,8 @@ def main():
                         lowbq += 1; status = 'low_bq'
                     else:
                         good.append((b, mapq, strand, bq, dist, soft)); status = 'used'
+                if status in ('low_mapq', 'low_bq') and b == s['alt'].upper():
+                    alt_dropped += 1
                 rout.write(f"{smp['sample']}\t{s['id']}\t{f[0]}\t{flag}\t{mapq}\t{strand}\t{b}\t{bq}\t{dist}\t{soft}\t{status}\n")
             ref_b, alt_b = s['ref'].upper(), s['alt'].upper()
             cnt = Counter(g[0] for g in good)
@@ -194,11 +197,11 @@ def main():
             strands = lambda base: (sum(1 for g in good if g[0] == base and g[2] == '+'),
                                     sum(1 for g in good if g[0] == base and g[2] == '-'))
             af, ar = strands(alt_b); rf, rr = strands(ref_b)
-            cls = classify(ref_n, alt_n, oth_n, frac_lowmq, mf, depth)
+            cls = classify(ref_n, alt_n, oth_n, frac_lowmq, mf, depth, lowmq)
             if cls == 'DERIVED_SUPPORTED':
-                conf = confidence(cls, alt_n, (af > 0) + (ar > 0), mf)
+                conf = confidence(cls, alt_n, (af > 0) + (ar > 0), mf, frac_lowmq)
             elif cls == 'ANCESTRAL_SUPPORTED':
-                conf = confidence(cls, ref_n, (rf > 0) + (rr > 0), mf)
+                conf = confidence(cls, ref_n, (rf > 0) + (rr > 0), mf, frac_lowmq)
             else:
                 conf = 'none'
             interp = {
@@ -208,6 +211,8 @@ def main():
                 'INSUFFICIENT_COVERAGE': f"only {depth} usable read(s); no call (not evidence of reference)",
                 'UNRELIABLE_MAPPING': f"{frac_lowmq:.0%} of reads MAPQ<{a.min_mapq} / prelim mappability={mf}; no call",
             }[cls]
+            if alt_dropped:
+                interp += f" [NOTE: {alt_dropped} low-MAPQ/low-BQ read(s) carry {alt_b}; excluded]"
             if cls == 'INSUFFICIENT_COVERAGE' and depth == 1:
                 interp += f" [single read shows {good[0][0]}]"
             fm = [g[1] for g in good]; fb = [g[3] for g in good]
@@ -217,7 +222,7 @@ def main():
                        observed_alleles=';'.join(f"{k}:{v}" for k, v in sorted(cnt.items())) or '-',
                        alt_strands_fwd_rev=f"{af}/{ar}", ref_strands_fwd_rev=f"{rf}/{rr}",
                        mapq_median_filtered=(st.median(fm) if fm else ''), mapq_min_filtered=(min(fm) if fm else ''),
-                       frac_primary_lowmapq=round(frac_lowmq, 3), bq_median_filtered=(st.median(fb) if fb else ''),
+                       frac_primary_lowmapq=round(frac_lowmq, 3), bq_median_filtered=(st.median(fb) if fb else ''), alt_reads_in_filtered_out=alt_dropped,
                        near_read_end_reads=sum(1 for g in good if g[4] < 5),
                        softclipped_reads=sum(1 for g in good if g[5] > 0),
                        callable=('yes' if cls in ('DERIVED_SUPPORTED', 'ANCESTRAL_SUPPORTED', 'MIXED_AMBIGUOUS') else 'no'),
