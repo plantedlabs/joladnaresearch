@@ -25,3 +25,29 @@
    PV19      A ref=4 alt=0 oth=0 d=4 
 == SC_GMFUL5306400 (control_negative) sexY=5634 male
    M132      D ref=0 alt=7 oth=0 d=7 
+   Z958      D ref=0 alt=2 oth=0 d=2 
+   CTS246    A ref=2 alt=0 oth=0 d=2 
+   Z906      A ref=6 alt=0 oth=0 d=6 
+   Z15174    A ref=5 alt=0 oth=0 d=5 
+   Z15197    A ref=3 alt=0 oth=0 d=3 
+   Z15231    A ref=3 alt=0 oth=0 d=3 
+   Z15232    N ref=1 alt=0 oth=0 d=1 single usable fragment
+   Z15234    A ref=9 alt=0 oth=0 d=9 
+   Z5991     A ref=9 alt=0 oth=0 d=9 
+   FT402211  A ref=7 alt=0 oth=0 d=7 
+   Z15196    A ref=8 alt=0 oth=0 d=8 
+   FTF75935  A ref=6 alt=0 oth=0 d=6 
+   PV05      N ref=1 alt=0 oth=0 d=1 single usable fragment
+   PV06      A ref=9 alt=0 oth=0 d=9 
+   PV07      A ref=5 alt=0 oth=0 d=5 
+   PV11      A ref=4 alt=0 oth=0 d=4 
+   PV12      A ref=2 alt=0 oth=0 d=2 
+   PV13      A ref=11 alt=0 oth=0 d=11 
+   PV14      A ref=10 alt=0 oth=0 d=10 
+   PV15      A ref=8 alt=0 oth=0 d=8 
+   PV16      A ref=6 alt=0 oth=0 d=6 
+   PV17      A ref=9 alt=0 oth=0 d=9 
+   PV19      A ref=2 alt=0 oth=0 d=2 
+== SC_GMMAN5482228 (test) sexY=6601 male
+   M132      A ref=11 alt=0 oth=0 d=11 
+   Z958      A ref=4 alt=0 oth=0 d=4 
