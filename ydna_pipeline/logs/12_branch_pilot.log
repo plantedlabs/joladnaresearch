@@ -105,3 +105,9 @@
    Z906      A ref=4 alt=0 oth=0 d=4 
 == SC_GMWOF5428879 (test) sexY=6330 male
    M132      A ref=5 alt=0 oth=0 d=5 
+   Z958      A ref=6 alt=0 oth=0 d=6 
+   CTS246    A ref=6 alt=0 oth=0 d=6 
+   Z906      A ref=6 alt=0 oth=0 d=6 
+== HGDP00904 (test) sexY=11347 male
+   M132      A ref=15 alt=0 oth=0 d=15 
+   Z958      A ref=7 alt=0 oth=0 d=7 
