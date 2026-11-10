@@ -15,6 +15,7 @@ output so the ranking can be audited and re-weighted):
   Jola reads: mean fraction MAPQ<20 > 0.5 / > 0.25-3 / -1
   Jola strict-filter calls change vs standard     -1
   Another derived allele named at same position   -0.5 (mutable site; informational)
+  Read-level forensic finding (documented)         as stated (PV10: -4)
   Jola callable (ANC) in 3/3 men                  +1  (site genotypes cleanly in short reads)
 
 Tiers: A >= 10, B 7-9.5, C 4-6.5, D < 4.
@@ -34,6 +35,8 @@ for l in open('results/audit/ybrowse_position_lookup.tsv'):
     f = l.rstrip('\n').split('\t')
     if f[0].startswith('PV'):
         yb[f[0]] = f[3] if len(f) > 3 else ''
+# Documented manual evidence overrides (read-level forensics; see docs/REPORT.md section 4)
+FORENSIC = {'PV10': (-4, 'read forensics: alt-supporting reads are 25-bp satellite fragments; the T-bearing 25-mer occurs 47x on chrX/Y; source sequence absent from chrX/Y (-4)')}
 SAME_POS_OTHER_ALLELE = {'PV13': 'FT365779 (G>C) also named at this position'}
 pv = [x for x in (l.rstrip('\n').split('\t') for l in open('config/private_variants.tsv')) if not x[0].startswith('#')]
 
@@ -74,6 +77,8 @@ for sid, chrom, pos, ref, alt, mq30 in pv:
         sc -= 1; why.append('strict filter changes a call (-1)')
     if sid in SAME_POS_OTHER_ALLELE:
         sc -= 0.5; why.append(SAME_POS_OTHER_ALLELE[sid] + ' (-0.5)')
+    if sid in FORENSIC:
+        sc += FORENSIC[sid][0]; why.append(FORENSIC[sid][1])
     n_anc = sum(1 for v in calls_str.values() if v == 'ANCESTRAL_SUPPORTED')
     if n_anc == 3:
         sc += 1; why.append('ANC in 3/3 Jola (+1)')

@@ -4,6 +4,14 @@ Principle: screen cheaply on **branch-defining markers first**, and run the 19 p
 men who are independently shown to be E-Z15174 (or deeper). Haplogroup is not ethnicity. Population
 labels below are the data provider's sampling labels.
 
+## Update (v2): top priority
+**Screen FTF75935 (chrY:2,895,562 A>C; your terminal SNP, well-mapped genome-wide) in all GGVP + 1000G GWD males.**
+Any derived man is on your own branch. All three Jola men tested are ancestral. Confirm positives with
+E-Z15174-block markers (Z15231, Z15232, Z15234) and tier-A private SNPs. Then do the IN147690 block-tree
+comparison (REPORT §6).
+
+Coordinate note: the repo's original "Z15234" position (8,414,659) is Z15197. Use `config/tree_markers.tsv`.
+
 ## Tier 0: before expanding (small, high value)
 1. **Verify the branch-marker coordinates.** The four Z-SNP positions came from the repo script. The
    CRAM run (all three Jola men derived at all four) supports them empirically, but they should also be

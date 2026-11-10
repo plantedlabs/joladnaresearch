@@ -86,3 +86,48 @@ published for GGVP**, so CRAM pileup is required.
   The CRAM results serve as an empirical check: if they are real E-Z15174 markers, all three Jola men must be derived.
 * First run of `01_annotate_sites.py` used the wrong segdup column (alignment length instead of
   fracMatch) and counted short partial `bwa` alt alignments. Both were fixed: column 27, and ≥90 aligned bp.
+
+---
+
+## v2 reliability strengthening (2026-11-10, same session)
+
+### New data sources (remote range queries only; no full-genome download)
+| Item | URL |
+|---|---|
+| Umap multi-read mappability k24/36/50/100 | `https://hgdownload.soe.ucsc.edu/gbdb/hg38/hoffmanMappability/k{K}.Umap.MultiTrackMappability.bw` (825 MB–1.9 GB each; only index nodes and blocks fetched) |
+| Umap unique k100 regions | `…/hoffmanMappability/k100.Unique.Mappability.bb` |
+| ENCODE blacklist v2, GRC exclusions | `…/gbdb/hg38/problematic/encBlacklist.bb`, `grcExclusions.bb` |
+| YBrowse SNP registry (hg38) | `https://ybrowse.org/gbrowse2/gff/snps_hg38.vcf.gz` (+ `.tbi`; queried with `tabix`, one 37 MB stream to find named markers) |
+
+`ybrowse.org` was added to the session's network allowlist for this step.
+
+### Tooling decisions
+* Running downloaded UCSC binaries (`bigWigToBedGraph`) was blocked by the sandbox policy. The PyPI
+  `pyBigWig` wheel lacks remote (libcurl) support. So `scripts/bbi_remote.py` was written: a stdlib-only
+  reader of the BBI format (header, chromosome B+ tree, R-tree, zlib blocks) over curl byte ranges. It was
+  validated on PV06 (Umap k100 = 1.0 across the window) and on the known ENCODE blacklist interval
+  chrY:10,246,201–11,041,200. The first version had a header-slice bug (60 vs 56 bytes), which was fixed.
+* `02_cram_site_evidence.py --strict` adds two read exclusions: fewer than 50% of read bases aligned
+  (heavy clipping), and XS > AS (a better alignment elsewhere). Effect on the 57 private cells: **no call
+  changed**. Filtered depth dropped by 1 read at PV09 (5309804) and by 1 and 3 reads at PV10.
+* Umap values are expanded per base. Bases absent from the bigWig are treated as 0, since Umap omits
+  unmappable positions.
+
+### Coordinate audit (YBrowse)
+* Confirmed: Z15174 = 4,202,358 G>T; Z15231 = 14,719,978 G>A; Z15232 = 14,765,245 T>C.
+* **Corrected:** 8,414,659 C>T is **Z15197**, not Z15234. The true Z15234 = 15,274,693 C>G. Both are in
+  YFull's E-Z15174 block.
+* Added (YBrowse): M132 19,734,375; Z958 20,558,142; CTS246 2,972,260; Z906 8,360,264; Z5991 2,849,335;
+  FT402211 9,176,816; Z15196 8,336,326; FTF75935 2,895,562 (`config/tree_markers.tsv`).
+* 17 of the 19 private positions have YBrowse names (`results/audit/ybrowse_position_lookup.tsv`). PV13 also
+  carries FT365779 with a different alternate allele (G>C).
+
+### PV10 forensics
+* SAM records with all tags for all reads overlapping the site, per sample: `results/pv10/*.sam`.
+  The per-read table includes AS, XS, XA count, exact-XA count, SA, mate position, mate MAPQ and mate CIGAR.
+* An exact 25-mer count on chrX+chrY (Python `str.count`, both strands) and a 31-mer source-sequence probe:
+  see REPORT §4.
+
+### Ranking
+`scripts/05_rank_private_snps.py` scores each SNP additively, and every deduction is printed. There is one
+documented manual override: PV10 −4 for read forensics.

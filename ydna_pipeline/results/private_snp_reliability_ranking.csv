@@ -1,0 +1,20 @@
+rank,site_id,grch38_pos,ref,alt,ybrowse_names,score,tier,bigy_mapq_lt30,umap_k100,umap_k50_min_pm50,umap_k36_site,encode_blacklist,chrXY_prelim,segdup_fracMatch,repeatmasked,jola_mean_lowmapq_frac,jola_strict_calls,evidence
+1,PV05,6926993,A,G,chrY,11.0,A,no,1.0,1.0,0.972,False,pass,,True,0.0,ANC/ANC/ANC,ANC in 3/3 Jola (+1)
+2,PV06,7013476,T,C,chrY,11.0,A,no,1.0,0.88,1.0,False,pass,,True,0.0,ANC/ANC/ANC,ANC in 3/3 Jola (+1)
+3,PV07,7758704,C,A,chrY,11.0,A,no,1.0,1.0,1.0,False,pass,,False,0.0,ANC/ANC/ANC,ANC in 3/3 Jola (+1)
+4,PV11,14952809,C,A,chrY,11.0,A,no,1.0,0.68,0.889,False,pass,,True,0.0,ANC/ANC/ANC,ANC in 3/3 Jola (+1)
+5,PV14,15936416,G,A,chrY,11.0,A,no,1.0,1.0,1.0,False,pass,,False,0.0,ANC/ANC/ANC,ANC in 3/3 Jola (+1)
+6,PV15,15990294,C,A,chrY,11.0,A,no,1.0,1.0,1.0,False,pass,,True,0.0,ANC/ANC/ANC,ANC in 3/3 Jola (+1)
+7,PV17,21349919,G,A,chrY,11.0,A,no,1.0,1.0,1.0,False,pass,,True,0.0,ANC/ANC/ANC,ANC in 3/3 Jola (+1)
+8,PV13,15391518,G,A,chrY,10.5,A,no,1.0,0.7,0.75,False,pass,,True,0.0,ANC/ANC/ANC,FT365779 (G>C) also named at this position (-0.5) ; ANC in 3/3 Jola (+1)
+9,PV12,15252463,T,C,chrY,10.0,A,no,1.0,1.0,1.0,False,pass,,False,0.0,ANC/INS/ANC,
+10,PV16,18949120,C,T,chrY,10.0,A,no,1.0,0.68,1.0,False,pass,,True,0.0,ANC/ANC/INS,
+11,PV19,26572350,C,T,chrY,10.0,A,no,1.0,0.68,1.0,False,pass,0.9619,True,0.0,ANC/ANC/ANC,segdup 0.962 (-1) ; ANC in 3/3 Jola (+1)
+12,PV08,9023319,C,A,chrY,9.0,B,no,1.0,0.52,0.722,False,caution,0.926,False,0.0,ANC/ANC/ANC,chrX/Y 100-mer caution (-2) ; ANC in 3/3 Jola (+1)
+13,PV18,21680474,C,G,chrY,9.0,B,no,1.0,0.56,0.111,False,pass,0.965,True,0.0,ANC/INS/ANC,segdup 0.965 (-1)
+14,PV09,10820475,A,T,NO_YBROWSE_RECORD,7.0,B,no,1.0,1.0,1.0,True,pass,,True,0.46,ANC/ANC/ANC,ENCODE blacklist (-3) ; Jola low-MAPQ frac 0.46 (-1) ; ANC in 3/3 Jola (+1)
+15,PV03,5650649,G,T,chrY,5.0,C,no,1.0,0.44,1.0,False,caution,0.9878,False,0.0,ANC/ANC/INS,Umap k50 min±50=0.44 (-1) ; chrX/Y 100-mer caution (-2) ; segdup 0.988 (-2)
+16,PV04,6220233,T,C,chrY,2.0,D,yes,1.0,0.18,0.861,False,caution,0.9878,True,0.05,ANC/INS/ANC,BigY MAPQ<30 (-3) ; Umap k50 min±50=0.18 (-1) ; chrX/Y 100-mer caution (-2) ; segdup 0.988 (-2)
+17,PV02,5039793,C,T,chrY,0.0,D,yes,0.74,0.0,0.278,False,caution,0.9879,False,0.05,ANC/ANC/ANC,BigY MAPQ<30 (-3) ; Umap k100=0.74 (-3) ; Umap k50 min±50=0.0 (-1) ; chrX/Y 100-mer caution (-2) ; segdup 0.988 (-2) ; ANC in 3/3 Jola (+1)
+18,PV10,10973240,C,T,NO_YBROWSE_RECORD,0.0,D,no,1.0,1.0,0.639,True,pass,,True,0.88,UNR/UNR/UNR,ENCODE blacklist (-3) ; Jola low-MAPQ frac 0.88 (-3) ; read forensics: alt-supporting reads are 25-bp satellite fragments; the T-bearing 25-mer occurs 47x on chrX/Y; source sequence absent from chrX/Y (-4)
+19,PV01,3339724,G,C,chrY,-4.0,D,yes,0.48,0.0,0.0,False,fail,0.9827,True,0.38,UNR/UNR/UNR,BigY MAPQ<30 (-3) ; Umap k100=0.48 (-4) ; Umap k50 min±50=0.0 (-1) ; chrX/Y 100-mer FAIL (-3) ; segdup 0.983 (-2) ; Jola low-MAPQ frac 0.38 (-1)
