@@ -66,3 +66,8 @@
 == SC_GMMAN5482178 (test) sexY=6678 male
    M132      A ref=13 alt=0 oth=0 d=13 
    Z958      A ref=11 alt=0 oth=0 d=11 
+   CTS246    A ref=5 alt=0 oth=0 d=5 
+   Z906      A ref=9 alt=0 oth=0 d=9 
+== SC_GMMAN5482207 (test) sexY=6202 male
+   M132      D ref=0 alt=4 oth=0 d=4 
+   Z958      D ref=0 alt=7 oth=0 d=7 
