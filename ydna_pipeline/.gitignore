@@ -1,3 +1,4 @@
 ref/
 *.tmp
 __pycache__/
+*.crai
