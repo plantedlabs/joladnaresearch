@@ -1,0 +1,12 @@
+#id	chrom	pos_grch38	ref	alt	bigy_mq_lt30
+PV05	chrY	6926993	A	G	no
+PV06	chrY	7013476	T	C	no
+PV07	chrY	7758704	C	A	no
+PV11	chrY	14952809	C	A	no
+PV12	chrY	15252463	T	C	no
+PV13	chrY	15391518	G	A	no
+PV14	chrY	15936416	G	A	no
+PV15	chrY	15990294	C	A	no
+PV16	chrY	18949120	C	T	no
+PV17	chrY	21349919	G	A	no
+PV19	chrY	26572350	C	T	no
