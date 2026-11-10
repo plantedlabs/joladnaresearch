@@ -3,7 +3,7 @@
 Reproducible pipeline comparing the 19 Big Y private variants of YF133256 (E-FTF75935 / YFull E-Z15174*)
 with GGVP Jola men, using indexed remote access to the CRAMs. No full-genome or full-CRAM download is needed.
 
-**Start here:** [`docs/REPORT.md`](docs/REPORT.md) (findings), [`docs/FTF75935_SCREEN_REPORT.md`](docs/FTF75935_SCREEN_REPORT.md) (population screen), [`results/evidence_matrix.md`](results/evidence_matrix.md),
+**Start here:** [`docs/REPORT.md`](docs/REPORT.md) (findings), [`docs/FTF75935_SCREEN_REPORT.md`](docs/FTF75935_SCREEN_REPORT.md) (population screen), [`docs/BRANCH_DISCOVERY_REPORT.md`](docs/BRANCH_DISCOVERY_REPORT.md) (topology + branch-discovery design), [`results/evidence_matrix.md`](results/evidence_matrix.md),
 [`docs/TECHNICAL_LOG.md`](docs/TECHNICAL_LOG.md), [`docs/EXPANSION_PLAN.md`](docs/EXPANSION_PLAN.md).
 
 ## Run

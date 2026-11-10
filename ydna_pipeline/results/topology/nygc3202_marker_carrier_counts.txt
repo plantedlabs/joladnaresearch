@@ -1,0 +1,13 @@
+19734375 carriers_all3202=38
+20558142 carriers_all3202=38
+2972260 carriers_all3202=20
+8360264 carriers_all3202=20
+4202358 carriers_all3202=3
+8414659 carriers_all3202=3
+14719978 carriers_all3202=3
+14765245 carriers_all3202=3
+15274693 carriers_all3202=3
+2849335 carriers_all3202=3
+9176816 carriers_all3202=0
+8336326 carriers_all3202=3
+2895562 carriers_all3202=0
